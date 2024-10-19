@@ -1,7 +1,7 @@
 .circle {
     width: 50px;             
     height: 50px;
-    background-color: #3498db; 
+    background-color: #3437db; 
     border-radius: 50%;       
     display: flex;            
     justify-content: center;  
@@ -9,5 +9,46 @@
     font-size: 14px;         
     color: white;             
     font-weight: bold;        
+  }
+  
+
+  /* Circle Styling */
+.circle {
+    width: 100px;             
+    height: 100px;            
+    background-color: #3498db; 
+    border-radius: 50%;       
+    display: flex;           
+    justify-content: center;  
+    align-items: center;      
+    font-size: 24px;          /* Font size for the letters */
+    color: white;             /* Text color */
+    font-weight: bold;        /* Bold letters */
+    margin-bottom: 20px;      /* Adds space between the circle and the About button */
+  }
+  
+  /* About Button Styling */
+  .about-btn {
+    display: inline-block;    /* Allows padding and margin to apply */
+    background-color: #2ecc71; /* Button background color */
+    color: white;             /* Text color */
+    padding: 10px 20px;       /* Padding inside the button */
+    text-decoration: none;    /* Removes underline from the link */
+    border-radius: 5px;       /* Rounded corners */
+    font-size: 16px;          /* Font size */
+    font-weight: bold;        /* Makes the text bold */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  /* Hover Effect for the Button */
+  .about-btn:hover {
+    background-color: #27ae60; /* Changes the background color on hover */
+  }
+
+  .about-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+    border-radius: 10px;
   }
   
