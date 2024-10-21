@@ -1,48 +1,105 @@
 /* Circle Styling */
 .circle {
-    width: 100px;             
-    height: 100px;            
-    background-color: #3498db; 
-    border-radius: 50%;       
-    display: flex;           
-    justify-content: center;  
-    align-items: center;      
-    font-size: 24px;          /* Font size for the letters */
-    color: white;             /* Text color */
-    font-weight: bold;        /* Bold letters */
-    margin-bottom: 20px;      /* Adds space between the circle and the About button */
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Font size for the letters */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold letters */
+  margin-bottom: 20px; /* Adds space between the circle and the About button */
 }
 
 /* About Button Styling */
 .about-btn {
-    display: inline-block;    /* Allows padding and margin to apply */
-    background-color: #2ecc71; /* Button background color */
-    color: white;             /* Text color */
-    padding: 10px 20px;       /* Padding inside the button */
-    text-decoration: none;    /* Removes underline from the link */
-    border-radius: 5px;       /* Rounded corners */
-    font-size: 16px;          /* Font size */
-    font-weight: bold;        /* Makes the text bold */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+  display: inline-block;
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-/* Hover Effect for the Button */
 .about-btn:hover {
-    background-color: #27ae60; /* Changes the background color on hover */
+  background-color: #27ae60;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between circle and buttons */
+  padding: 10px; /* Adds padding around the header */
 }
 
 /* About Section Styling */
 .about-section {
-    padding: 50px;
-    background-color: #f4f4f4;
-    margin-top: 50px;
-    border-radius: 10px;
+  padding: 50px;
+  background-color: #f4f4f4;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 /* Flexbox Layout for Image and Text */
-.header{
+.about-content {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensures the circle and button are spaced apart */
-  padding: 10px 20px; /* Adds some padding around the header */
+  gap: 20px; /* Adds space between the image and the text */
+}
+
+/* Image Styling with Animated Border */
+.about-image {
+  width: 100px; /* Adjust the image size */
+  height: 100px; /* Adjust the image size */
+  /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the container properly */
+  
+  /* Create a border */
+  border: 0.5rem solid transparent; /* Transparent border to hold the gradient */
+
+  /* Paint an image in the border using conic gradient */
+  border-image: 
+    conic-gradient(
+      from 0deg, /* Initial angle for the gradient */
+      #d53e33 0deg 90deg, /* Red from 0 to 90 degrees */
+      #2b2823 90deg 180deg, /* Yellow from 90 to 180 degrees */
+      #377af5 180deg 270deg, /* Blue from 180 to 270 degrees */
+      #399953 270deg 360deg /* Green from 270 to 360 degrees */
+    ) 1; /* Paint the border */
+  
+  animation: rotate-border 5s linear infinite; /* Add rotation animation */
+}
+
+/* Animation keyframes for rotating the border */
+@keyframes rotate-border {
+  0% {
+      border-image: conic-gradient(
+        from 0deg,
+        #d53e33 0deg 90deg,
+        #2e2b24 90deg 180deg,
+        #377af5 180deg 270deg,
+        #399953 270deg 360deg
+      ) 1;
+  }
+  100% {
+      border-image: conic-gradient(
+        from 360deg, /* Rotate the angle */
+        #d53e33 0deg 90deg,
+        #fbb300 90deg 180deg,
+        #377af5 180deg 270deg,
+        #399953 270deg 360deg
+      ) 1;
+  }
+}
+
+/* Text Styling for About Section */
+.about-text {
+  max-width: 600px;
+  line-height: 1.6;
 }
