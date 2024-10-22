@@ -36,6 +36,17 @@
   align-items: center;
   justify-content: space-between; 
   padding: 10px; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; /* Set a background color */
+  z-index: 1000; /* Ensure it stays on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visibility */
+}
+
+/* Adjust body padding to prevent content overlap */
+body {
+  padding-top: 80px; /* Adjust according to your header height */
 }
 
 /* About Section Styling */
@@ -57,23 +68,10 @@
 .about-image {
   width: 200px; 
   height: 200px; 
-  
   object-fit: cover; 
-  
-  /* Create a border */
   border: 0.5rem solid transparent; 
-
-  /* Paint an image in the border using conic gradient */
-  border-image: 
-    conic-gradient(
-      from 0deg, 
-      #d53e33 0deg 90deg, 
-      #2b2823 90deg 180deg, 
-      #377af5 180deg 270deg, 
-      #399953 270deg 360deg 
-    ) 1; /* Paint the border */
-  
-  animation: rotate-border 1s linear infinite; /* Add rotation animation */
+  border-image: conic-gradient(from 0deg, #d53e33 0deg 90deg, #2b2823 90deg 180deg, #377af5 180deg 270deg, #399953 270deg 360deg) 1;
+  animation: rotate-border 1s linear infinite;
 }
 
 /* Animation keyframes for rotating the border */
@@ -89,7 +87,7 @@
   }
   100% {
       border-image: conic-gradient(
-        from 360deg, /* Rotate the angle */
+        from 360deg,
         #1d1717 0deg 90deg,
         #8484a5 90deg 180deg,
         #38a742 180deg 270deg,
