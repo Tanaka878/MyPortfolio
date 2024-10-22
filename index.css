@@ -101,3 +101,167 @@ body {
   max-width: 600px;
   line-height: 1.6;
 }
+
+.headers{
+  font-size: larger;
+  justify-content: center;
+  justify-items: center;
+}
+/*/* Flexbox wrapper for skills */
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping when there is no space */
+  justify-content: space-around; /* Space out items evenly */
+  gap: 20px; /* Add spacing between skill items */
+  padding: 20px;
+}
+
+/* Skill div styling */
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Fixed width for each skill item */
+}
+
+/* Skill image styling */
+.skill-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Skill details (label + range bar) */
+.skill-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow the range bar to fill available space */
+}
+
+.skill-details label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-details input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  background-color: #3498db;
+  outline: none;
+  border-radius: 5px;
+}
+
+.skill-details input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.skill-details input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Skill level label */
+.skill-details span {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/************/
+
+/* Wrapper for the projects */
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Project Card Styling */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Project Image Styling */
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Project Details Styling */
+.project-details {
+  text-align: center;
+}
+
+.project-details h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.project-details p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Link Styling (GitHub & Live Project) */
+.github-link, .live-link {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.github-link i, .live-link i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.github-link:hover, .live-link:hover {
+  background-color: #555;
+}
+
+/* Specific Styling for Live Project Link */
+.live-link {
+  background-color: #007bff; /* Different color for live project */
+}
+
+.live-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

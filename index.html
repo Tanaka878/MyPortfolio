@@ -23,7 +23,7 @@
 
     <!-- About Section -->
     <section id="about" class="about-section">
-        <h2>About Me</h2>
+        <h2 class="headers">About Me</h2>
         <div class="about-content">
             <img src="Image/image.jpg" alt="Personal Image" class="about-image">
             <div class="about-text">
@@ -41,6 +41,7 @@
 
     <section id="education" class="about-section">
 
+        <h1>Education</h1>
     <div>
     
         <h2>For my high school education</h2>
@@ -60,15 +61,160 @@
 
     <section id="skills" class="about-section">
         <h2>Skills</h2>
+
+        <br>
+        <br>
+     
+        <div class="skills-wrapper">
+            <div class="skill">
+                <img src="Image/java.webp" alt="Java" class="skill-image">
+                <div class="skill-details">
+                    <label for="java-skill">Java Skill:</label>
+                    <input type="range" id="java-skill" name="java-skill" min="0" max="100" value="80" disabled>
+                    <span id="skill-level">Expert</span>
+                </div>
+            </div>
+        
+            <div class="skill">
+                <img src="Image/react.webp" alt="React" class="skill-image">
+                <div class="skill-details">
+                    <label for="react-skill">React Skill:</label>
+                    <input type="range" id="react-skill" name="react-skill" min="0" max="100" value="70" disabled>
+                    <span id="skill-level">Intermediate</span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <img src="Image/nextjs.webp" alt="React" class="skill-image">
+                <div class="skill-details">
+                    <label for="react-skill">Next.js Skill:</label>
+                    <input type="range" id="react-skill" name="react-skill" min="0" max="100" value="70" disabled>
+                    <span id="skill-level">Intermediate</span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <img src="Image/mongodb.webp" alt="React" class="skill-image">
+                <div class="skill-details">
+                    <label for="react-skill">MongoDB Skill:</label>
+                    <input type="range" id="react-skill" name="react-skill" min="0" max="100" value="20" disabled>
+                    <span id="skill-level">Beginner</span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <img src="Image/mysql.webp" alt="React" class="skill-image">
+                <div class="skill-details">
+                    <label for="react-skill">MySQL Skill:</label>
+                    <input type="range" id="react-skill" name="react-skill" min="0" max="100" value="60" disabled>
+                    <span id="skill-level">Intermediate</span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <img src="Image/js.webp" alt="React" class="skill-image">
+                <div class="skill-details">
+                    <label for="react-skill">Javascript Skill:</label>
+                    <input type="range" id="react-skill" name="react-skill" min="0" max="100" value="90" disabled>
+                    <span id="skill-level">Expert</span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <img src="Image/html.webp" alt="React" class="skill-image">
+                <div class="skill-details">
+                    <label for="react-skill">HTML Skill:</label>
+                    <input type="range" id="react-skill" name="react-skill" min="0" max="100" value="90" disabled>
+                    <span id="skill-level">Expert</span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <img src="Image/linux.webp" alt="React" class="skill-image">
+                <div class="skill-details">
+                    <label for="react-skill">LINUX  Skill:</label>
+                    <input type="range" id="react-skill" name="react-skill" min="0" max="100" value="90" disabled>
+                    <span id="skill-level">Expert</span>
+                </div>
+            </div>
+
+
+        
+            <!-- Add more skill items here as needed -->
+        </div>
+        
+        
+        
     </section>
 
     <section id="projects" class="about-section">
         <h2>Projects</h2>
+
+        <div class="projects-wrapper">
+            <!-- Reusable Project Card -->
+            <div class="project-card">
+                <img src="Image/header.png" alt="Project 1" class="project-image">
+                <div class="project-details">
+                    <h3>My Portfolio Website</h3>
+                    <p>The is the portfolio which you're viewing now which was built using HTML and CSS for styling and is hosted on Vercel</p>
+                    <a href="https://github.com/Tanaka878/MyPortfolio" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a href="https://my-portfolio-smoky-xi-97.vercel.app/" class="live-link" target="_blank">
+                        <i class="fas fa-globe"></i> Live Project
+                    </a>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <img src="Image/msu.jpeg" alt="Project 2" class="project-image">
+                <div class="project-details">
+                    <h3>Project Title 2</h3>
+                    <p>This is a brief description of Project 2. It involves full-stack development using Next.js and MySQL.</p>
+                    <a href="https://github.com/username/project2" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a href="https://www.liveproject.com/project2" class="live-link" target="_blank">
+                        <i class="fas fa-globe"></i> Live Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="Image/msu.jpeg" alt="Project 1" class="project-image">
+                <div class="project-details">
+                    <h3>Project Title 1</h3>
+                    <p>This is a brief description of Project 1. It showcases the use of technologies like Java, React, and MongoDB.</p>
+                    <a href="https://github.com/username/project1" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a href="https://www.liveproject.com/project1" class="live-link" target="_blank">
+                        <i class="fas fa-globe"></i> Live Project
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="about-section">
         <h2>Contact Me</h2>
     </section>
+
+    <script>
+
+        function updateSkillLevel(value) {
+    const skillLevel = document.getElementById('skill-level');
+    
+    if (value < 33) {
+        skillLevel.textContent = "Beginner";
+    } else if (value < 66) {
+        skillLevel.textContent = "Intermediate";
+    } else {
+        skillLevel.textContent = "Expert";
+    }
+}
+
+    </script>
 
 </body>
 </html>
