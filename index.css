@@ -7,10 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px; /* Font size for the letters */
-  color: white; /* Text color */
-  font-weight: bold; /* Bold letters */
-  margin-bottom: 20px; /* Adds space between the circle and the About button */
+  font-size: 24px; 
+  color: white; 
+  font-weight: bold; 
+  margin-bottom: 20px;
 }
 
 /* About Button Styling */
@@ -34,8 +34,8 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between circle and buttons */
-  padding: 10px; /* Adds padding around the header */
+  justify-content: space-between; 
+  padding: 10px; 
 }
 
 /* About Section Styling */
@@ -50,30 +50,30 @@
 .about-content {
   display: flex;
   align-items: center;
-  gap: 20px; /* Adds space between the image and the text */
+  gap: 20px;
 }
 
 /* Image Styling with Animated Border */
 .about-image {
-  width: 100px; /* Adjust the image size */
-  height: 100px; /* Adjust the image size */
-  /* Make the image circular */
-  object-fit: cover; /* Ensure the image covers the container properly */
+  width: 200px; 
+  height: 200px; 
+  
+  object-fit: cover; 
   
   /* Create a border */
-  border: 0.5rem solid transparent; /* Transparent border to hold the gradient */
+  border: 0.5rem solid transparent; 
 
   /* Paint an image in the border using conic gradient */
   border-image: 
     conic-gradient(
-      from 0deg, /* Initial angle for the gradient */
-      #d53e33 0deg 90deg, /* Red from 0 to 90 degrees */
-      #2b2823 90deg 180deg, /* Yellow from 90 to 180 degrees */
-      #377af5 180deg 270deg, /* Blue from 180 to 270 degrees */
-      #399953 270deg 360deg /* Green from 270 to 360 degrees */
+      from 0deg, 
+      #d53e33 0deg 90deg, 
+      #2b2823 90deg 180deg, 
+      #377af5 180deg 270deg, 
+      #399953 270deg 360deg 
     ) 1; /* Paint the border */
   
-  animation: rotate-border 5s linear infinite; /* Add rotation animation */
+  animation: rotate-border 1s linear infinite; /* Add rotation animation */
 }
 
 /* Animation keyframes for rotating the border */
@@ -81,8 +81,8 @@
   0% {
       border-image: conic-gradient(
         from 0deg,
-        #d53e33 0deg 90deg,
-        #2e2b24 90deg 180deg,
+        #e2b1ae 0deg 90deg,
+        #dfb155 90deg 180deg,
         #377af5 180deg 270deg,
         #399953 270deg 360deg
       ) 1;
@@ -90,10 +90,10 @@
   100% {
       border-image: conic-gradient(
         from 360deg, /* Rotate the angle */
-        #d53e33 0deg 90deg,
-        #fbb300 90deg 180deg,
-        #377af5 180deg 270deg,
-        #399953 270deg 360deg
+        #1d1717 0deg 90deg,
+        #8484a5 90deg 180deg,
+        #38a742 180deg 270deg,
+        #76d8df 270deg 360deg
       ) 1;
   }
 }
