@@ -268,4 +268,90 @@ body {
 
 /*******
 
+/* Styling the section */
+#contact {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto; /* Centers the section horizontally */
+}
+
+/* Styling the heading */
+#contact h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Styling contact details */
+.contact-details p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the icons and text horizontally */
+}
+
+/* Style for icons */
+.contact-details i {
+  margin-right: 10px;
+  font-size: 22px;
+  color: #4CAF50;
+}
+
+/* Style for links */
+.contact-details a {
+  text-decoration: none;
+  color: #0077b5; /* Link color */
+  font-weight: bold;
+}
+
+.contact-details a:hover {
+  color: #005691; /* Darker color on hover */
+}
+
+/* Custom colors for each icon */
+.contact-details i.fab.fa-whatsapp {
+  color: #25D366; /* WhatsApp green */
+}
+
+.contact-details i.fas.fa-envelope {
+  color: #d14836; /* Gmail red */
+}
+
+.contact-details i.fab.fa-facebook {
+  color: #3b5998; /* Facebook blue */
+}
+
+.contact-details i.fab.fa-linkedin {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.contact-details i.fab.fa-twitter {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.contact-details i.fab.fa-instagram {
+  color: #e1306c; /* Instagram pink */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  #contact {
+      padding: 20px;
+  }
+
+  #contact h2 {
+      font-size: 28px;
+  }
+
+  .contact-details p {
+      font-size: 16px;
+  }
+}
 
