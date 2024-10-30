@@ -70,31 +70,13 @@ body {
   height: 200px; 
   object-fit: cover; 
   border: 0.5rem solid transparent; 
-  border-image: conic-gradient(from 0deg, #d53e33 0deg 90deg, #2b2823 90deg 180deg, #377af5 180deg 270deg, #399953 270deg 360deg) 1;
-  animation: rotate-border 1s linear infinite;
+  border-bottom: #333 dotted;
+  border-top: black dotted;
+  
 }
 
-/* Animation keyframes for rotating the border */
-@keyframes rotate-border {
-  0% {
-      border-image: conic-gradient(
-        from 0deg,
-        #e2b1ae 0deg 90deg,
-        #dfb155 90deg 180deg,
-        #377af5 180deg 270deg,
-        #399953 270deg 360deg
-      ) 1;
-  }
-  100% {
-      border-image: conic-gradient(
-        from 360deg,
-        #1d1717 0deg 90deg,
-        #8484a5 90deg 180deg,
-        #38a742 180deg 270deg,
-        #76d8df 270deg 360deg
-      ) 1;
-  }
-}
+
+
 
 /* Text Styling for About Section */
 .about-text {
