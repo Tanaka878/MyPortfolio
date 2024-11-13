@@ -1,4 +1,8 @@
 /* Circle Styling */
+.glow{
+  box-shadow: 0 0 10px 5px rgba(52, 152, 219, 0.8);
+
+}
 .container{
   background-color: #2c3e50;
 }
@@ -94,6 +98,7 @@ body {
   font-size: larger;
   justify-content: center;
   justify-items: center;
+  box-shadow: 0 0 10px 5px rgba(52, 152, 219, 0.8);
 }
 /*/* Flexbox wrapper for skills */
 .skills-wrapper {
@@ -344,3 +349,17 @@ body {
   }
 }
 
+
+
+.typing-container {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+.typing-container h1 {
+  display: inline;
+}
+.typed-text {
+  font-weight: bold;
+  color: #007BFF;
+}

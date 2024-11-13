@@ -28,21 +28,56 @@
         <div class="about-content">
             <img src="Image/Pasted image.png" alt="Personal Image" class="about-image">
             <div class="about-text">
-                <p>
-                    I am a passionate software developer with experience in full-stack development.
-                    I specialize in building robust applications using technologies such as  <b>Java</b>, <b>React.js</b> ,<b>Javascript</b>
-                    and  <b>Next.js</b>, along with <b>MySQL</b>
-                    and <b>MongoDB</b> for database management.I also have experience with Linux and Windows Operating Systems
-                    My journey in software development has allowed me to create innovative solutions that 
-                    enhance user experience and improve efficiency.
-                </p>
+                <!--div box-->
+
+                <div class="typing-container">
+                    <h1>Hi mate, I am a <span id="typed-text" class="typed-text"></span></h1>
+                </div>
+            
+                <script>
+                    // JavaScript for typing effect
+                    const textArray = ["Full-stack Developer.", "Problem Solver.", "Team Player.", "Software Engineer.","Software Developer"];
+                    let currentTextIndex = 0;
+                    let currentCharIndex = 0;
+                    const typedTextElement = document.getElementById("typed-text");
+            
+                    // Function to handle the typing effect
+                    function typeText() {
+                        if (currentCharIndex < textArray[currentTextIndex].length) {
+                            typedTextElement.textContent += textArray[currentTextIndex].charAt(currentCharIndex);
+                            currentCharIndex++;
+                            setTimeout(typeText, 100); // Adjust typing speed here
+                        } else {
+                            // Once a phrase is typed, wait a second and start backspacing
+                            setTimeout(backspaceText, 1000);
+                        }
+                    }
+            
+                    // Function to handle the backspacing effect
+                    function backspaceText() {
+                        if (currentCharIndex > 0) {
+                            typedTextElement.textContent = textArray[currentTextIndex].substring(0, currentCharIndex - 1);
+                            currentCharIndex--;
+                            setTimeout(backspaceText, 50); // Adjust backspacing speed here
+                        } else {
+                            // Once the backspacing is complete, move to the next phrase
+                            currentTextIndex = (currentTextIndex + 1) % textArray.length;
+                            setTimeout(typeText, 500); // Adjust delay before starting the next phrase
+                        }
+                    }
+            
+                    // Start the typing effect
+                    typeText();
+                </script>
+
+                <!--end of div box-->
             </div>
         </div>
     </section>
 
     <section id="education" class="about-section">
 
-        <h1>Education</h1>
+        <h1 class="glow">Education</h1>
     <div>
     
         <h2>For my high school education</h2>
@@ -61,7 +96,7 @@
     </section>
 
     <section id="skills" class="about-section">
-        <h2>Skills</h2>
+        <h2 class="glow">Skills</h2>
 
         <br>
         <br>
@@ -149,7 +184,7 @@
     </section>
 
     <section id="projects" class="about-section">
-        <h2>Projects</h2>
+        <h2 class="glow">Projects</h2>
 
         
 
@@ -268,7 +303,7 @@
     </section>
 
     <section id="contact" class="about-section">
-        <h2>Contact Me</h2>
+        <h2 class="glow">Contact Me</h2>
     
         <div class="contact-details">
             <!-- WhatsApp -->
