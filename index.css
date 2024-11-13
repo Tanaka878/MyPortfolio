@@ -363,3 +363,50 @@ body {
   font-weight: bold;
   color: #007BFF;
 }
+
+.download-container {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 10px;
+  margin-left: 300px;
+}
+
+/* Download Button Styling */
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px; /* Smaller padding */
+  font-size: 16px; /* Smaller font size */
+  color: white;
+  background-color: #007BFF;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+.download-btn i {
+  margin-right: 6px; /* Smaller icon spacing */
+}
+
+/* Media Query for Mobile Optimization */
+@media (max-width: 600px) {
+  /* Make the container more responsive on mobile */
+  .download-container {
+    width: 90%; /* Take up 90% of the width on small screens */
+    padding: 15px;
+  }
+
+  /* Adjust button size for smaller screens */
+  .download-btn {
+    padding: 8px 16px; /* Smaller padding for mobile */
+    font-size: 14px; /* Smaller font size on mobile */
+  }
+}
