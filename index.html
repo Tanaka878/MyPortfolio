@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="Image/header.png" type="image/png">
     <title>Tanaka Musungare</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body class="container">
 
     <!-- Header Section -->
@@ -15,26 +17,28 @@
 
 
 
-            
 
 
 
-            
+
+
         </div>
-        <div class="styled-text">
+        <div class="styled-text text-center mb-4 >
             <span class="bracket">&lt;</span>
             <span class="name">Tanaka</span>
             <span class="slash">/&gt;</span>
-          </div>
-
-        <div class="header-links">
-
-            <a href="#about" class="about-btn">About</a>
-            <a href="#education" class="about-btn">Education</a>
-            <a href="#skills" class="about-btn">Skills</a>
-            <a href="#projects" class="about-btn">Projects</a>
-            <a href="#contact" class="about-btn">Contact</a>
         </div>
+
+      <!--   <div
+            class="header-links flex flex-col sm:flex-row justify-center sm:justify-end items-center space-y-2 sm:space-y-0 sm:space-x-6 px-6 sm:px-8">
+            <a href="#about" class="about-btn text-sm sm:text-base">About</a>
+            <a href="#education" class="about-btn text-sm sm:text-base">Education</a>
+            <a href="#skills" class="about-btn text-sm sm:text-base">Skills</a>
+            <a href="#projects" class="about-btn text-sm sm:text-base px-6">Projects</a>
+
+        </div> -->
+
+
     </div>
 
     <!-- About Section -->
@@ -50,14 +54,14 @@
                 </div>
 
 
-            
+
                 <script>
                     // JavaScript for typing effect
-                    const textArray = ["Full-stack Developer.", "Problem Solver.", "Team Player.", "Software Engineer.","Software Developer"];
+                    const textArray = ["Full-stack Developer.", "Problem Solver.", "Team Player.", "Software Engineer.", "Software Developer"];
                     let currentTextIndex = 0;
                     let currentCharIndex = 0;
                     const typedTextElement = document.getElementById("typed-text");
-            
+
                     // Function to handle the typing effect
                     function typeText() {
                         if (currentCharIndex < textArray[currentTextIndex].length) {
@@ -69,7 +73,7 @@
                             setTimeout(backspaceText, 1000);
                         }
                     }
-            
+
                     // Function to handle the backspacing effect
                     function backspaceText() {
                         if (currentCharIndex > 0) {
@@ -82,40 +86,41 @@
                             setTimeout(typeText, 500); // Adjust delay before starting the next phrase
                         }
                     }
-            
+
                     // Start the typing effect
                     typeText();
                 </script>
 
                 <!--end of div box-->
-           
+
+            </div>
+
         </div>
 
-    </div>
 
+        <div class="download-container">
+            <h2>Download My Resume</h2>
 
-     <div class="download-container">
-        <h2>Download My Resume</h2>
-       
-        <a href="https://drive.google.com/file/d/1A7rTR8Mf9xcXb61loFb3KwZtS0DP-2LF/view?usp=drive_link" class="download-btn" download>
-            <i class="fas fa-download"></i> Download Resume
-        </a>
-    </div>
+            <a href="https://drive.google.com/file/d/1A7rTR8Mf9xcXb61loFb3KwZtS0DP-2LF/view?usp=drive_link"
+                class="download-btn" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
 
-    <!-- Include Font Awesome for the download icon -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!-- Include Font Awesome for the download icon -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </section>
 
     <section id="education" class="about-section">
 
         <h1 class="glow">Education</h1>
-    <div>
-    
-        <h2>For my high school education</h2>
-        <h1>2015 - 2021( Form 1 - 6)</h1>
-    </div>
-    <br>
-    <br>
+        <div>
+
+            <h2>For my high school education</h2>
+            <h1>2015 - 2021( Form 1 - 6)</h1>
+        </div>
+        <br>
+        <br>
 
         <div>
             <img src="Image/msu.jpeg" alt="" srcset="" height="200" width="250">
@@ -131,7 +136,7 @@
 
         <br>
         <br>
-     
+
         <div class="skills-wrapper">
             <div class="skill">
                 <img src="Image/java.webp" alt="Java" class="skill-image">
@@ -141,7 +146,7 @@
                     <span id="skill-level">Expert</span>
                 </div>
             </div>
-        
+
             <div class="skill">
                 <img src="Image/react.webp" alt="React" class="skill-image">
                 <div class="skill-details">
@@ -206,18 +211,18 @@
             </div>
 
 
-        
+
             <!-- Add more skill items here as needed -->
         </div>
-        
-        
-        
+
+
+
     </section>
 
     <section id="projects" class="about-section">
         <h2 class="glow">Projects</h2>
 
-        
+
 
         <div class="projects-wrapper">
             <!-- Reusable Project Card -->
@@ -225,7 +230,8 @@
                 <img src="Image/header.png" alt="Project 1" class="project-image">
                 <div class="project-details">
                     <h3>My Portfolio Website</h3>
-                    <p>The is the portfolio which you're viewing now which was built using HTML and CSS for styling and is hosted on Vercel</p>
+                    <p>The is the portfolio which you're viewing now which was built using HTML and CSS for styling and
+                        is hosted on Vercel</p>
                     <a href="https://github.com/Tanaka878/MyPortfolio" class="github-link" target="_blank">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
@@ -234,19 +240,19 @@
                     </a>
                 </div>
             </div>
-    
+
             <div class="project-card">
                 <img src="Image/Screenshot from 2024-10-22 13-15-37.png" alt="Project 2" class="project-image">
                 <div class="project-details">
                     <h3>Mimick of a Company Website</h3>
-                    <p>First Website i built as school assignment and hosted it on netlify. 
+                    <p>First Website i built as school assignment and hosted it on netlify.
                         It allowed me to gain appreciate web technologies. It was built using PHP, HMTL, CSS</p>
                     <a href="https://github.com/Tanaka878/Assignment" class="github-link" target="_blank">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
                     <a href="https://tanakamusungare.netlify.app/" class="live-link" target="_blank">
                         <i class="fas fa-globe"></i> Live Project
-                    </a>
+                    </a>h
                 </div>
             </div>
 
@@ -254,9 +260,9 @@
                 <img src="Image/banking.jpg" alt="Project 1" class="project-image">
                 <div class="project-details">
                     <h3>A sumulation of banking platform</h3>
-                    <p> A simulation of banking application built using JAVA and 
-                         Swing Framework for User Interface. I used MySQL as a database. 
-                         It was never hosted, but you can visit the my github page and check the code out.
+                    <p> A simulation of banking application built using JAVA and
+                        Swing Framework for User Interface. I used MySQL as a database.
+                        It was never hosted, but you can visit the my github page and check the code out.
 
                     </p>
                     <a href="https://github.com/Tanaka878/Banking" class="github-link" target="_blank">
@@ -272,7 +278,7 @@
                 <img src="Image/Screenshot from 2024-10-22 13-15-37.png" alt="Project 2" class="project-image">
                 <div class="project-details">
                     <h3>Talent Verify </h3>
-                    <p>An web application that can act as a central storage for company which allows an admin to 
+                    <p>An web application that can act as a central storage for company which allows an admin to
                         register their comapany add their employees and safely secure their records for future reference
                         I used React.js for frontend and Java Springboot for Backend
                     </p>
@@ -295,13 +301,15 @@
                 " alt="Project 2" class="project-image">
                 <div class="project-details">
                     <h3>Banking Web-Application</h3>
-                    <p>It is a web application that mimicks the the real banking online system. It allows the customer to register, deposit
-                        funds and makes purchses with their accout. It gives credit based on Artficial Intelligence(Tensor-Flow Model).
+                    <p>It is a web application that mimicks the the real banking online system. It allows the customer
+                        to register, deposit
+                        funds and makes purchses with their accout. It gives credit based on Artficial
+                        Intelligence(Tensor-Flow Model).
                     </p>
                     <a href="https://github.com/Tanaka878/Front-End" class="github-link" target="_blank">
                         <i class="fab fa-github"></i> View Frontend on GitHub
                     </a>
-    
+
                     <a href="https://github.com/Tanaka878/Backend" class="github-link" target="_blank">
                         <i class="fab fa-github"></i> View Backend on GitHub
                     </a>
@@ -315,8 +323,9 @@
                 <img src="Image/dashboard.png" alt="Project 1" class="project-image">
                 <div class="project-details">
                     <h3> Digital DashBoard</h3>
-                    <p> 
-                        A dahsboard created using Next.js and uses a MongoDB database to fetch and display data in a graph format for analysis.
+                    <p>
+                        A dahsboard created using Next.js and uses a MongoDB database to fetch and display data in a
+                        graph format for analysis.
                         The proejct is hosted on Vercel
 
                     </p>
@@ -335,43 +344,47 @@
 
     <section id="contact" class="about-section">
         <h2 class="glow">Contact Me</h2>
-    
+
         <div class="contact-details">
             <!-- WhatsApp -->
             <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/+263780001324">+263780001324</a></p>
-          
+
             <!-- Email -->
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:musungaretanaka@gmail.com">musungaretanaka@gmail.com</a></p>
-          
+            <p><i class="fas fa-envelope"></i> Email: <a
+                    href="mailto:musungaretanaka@gmail.com">musungaretanaka@gmail.com</a></p>
+
             <!-- Facebook -->
 
-          
+
             <!-- LinkedIn -->
-            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/tanaka-musungare-26668a295/">Tanaka Musungare</a></p>
-          
+            <p><i class="fab fa-linkedin"></i> LinkedIn: <a
+                    href="https://www.linkedin.com/in/tanaka-musungare-26668a295/">Tanaka Musungare</a></p>
+
             <!-- Twitter -->
             <p><i class="fab fa-twitter"></i> Twitter: <a href="https://x.com/Tanaka50711">Tanaka50711</a></p>
-          
+
             <!-- Instagram -->
-            <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/musungaretanaka/">Tanaka Musungare</a></p>
+            <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/musungaretanaka/">Tanaka
+                    Musungare</a></p>
         </div>
     </section>
-    
+
     <script>
 
         function updateSkillLevel(value) {
-    const skillLevel = document.getElementById('skill-level');
-    
-    if (value < 33) {
-        skillLevel.textContent = "Beginner";
-    } else if (value < 66) {
-        skillLevel.textContent = "Intermediate";
-    } else {
-        skillLevel.textContent = "Expert";
-    }
-}
+            const skillLevel = document.getElementById('skill-level');
+
+            if (value < 33) {
+                skillLevel.textContent = "Beginner";
+            } else if (value < 66) {
+                skillLevel.textContent = "Intermediate";
+            } else {
+                skillLevel.textContent = "Expert";
+            }
+        }
 
     </script>
 
 </body>
+
 </html>

@@ -421,7 +421,8 @@ body {
 .styled-text {
   font-family: Arial, sans-serif;
   font-weight: bold;
-  display: flex;
+  padding-right: 80px;
+ 
   align-items: center;
   font-size: 40px;
   
